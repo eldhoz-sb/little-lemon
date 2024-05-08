@@ -45,3 +45,27 @@ img.testimonial-profile-image {
     height: 100%;
     border-radius: 50px;
 }
+
+
+@media only screen and (max-width: 1300px) {
+    div#testimonials-items {
+        grid-column: 2 / span 10;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+    }
+  }
+
+
+  @media only screen and (max-width: 960px) {
+  div#testimonials-items {
+    grid-column: 1 / span 12;
+    display: flex;
+    grid-template-columns: auto;
+    grid-gap: 25px;
+    width: fit-content;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  }

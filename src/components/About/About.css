@@ -35,3 +35,35 @@ img.about-image-2 {
     object-fit: cover;
     position: relative;
 }
+
+@media only screen and (max-width: 1300px) {
+    div#about-text {
+        grid-column: 2 / span 4;
+    }
+
+    div#about-images {
+        grid-column: 9 / span 3;
+        height: 320px;
+    }
+
+    img.about-image-2 {
+        width: 100%;
+    }
+    img.about-image-1 {
+        width: 100%;
+    }
+  }
+
+
+  @media only screen and (max-width: 960px) {
+
+  div#about-text {
+    grid-column: 1 / span 12;
+  }
+
+  div#about-images {
+    grid-column: 6 / span 8;
+    height: 260px;
+    align-self: center;
+}
+}

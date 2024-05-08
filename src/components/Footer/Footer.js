@@ -5,6 +5,7 @@ function Footer() {
   return (
     <footer className="grid">
       <img src={Logo} alt="Little-Lemon-Logo" />
+      <section id='footer-menu'>
       <nav>
         <h6>Navigation</h6>
         <ul className="doormat-nav">
@@ -41,6 +42,7 @@ function Footer() {
           <li>Twitter</li>
         </ul>
       </nav>
+      </section>
     </footer>
   );
 }

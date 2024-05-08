@@ -129,5 +129,23 @@ button:hover {
 }
 
 
+@media only screen and (max-width: 1300px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap:16px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
 
+@media only screen and (max-width: 960px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap:8px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 

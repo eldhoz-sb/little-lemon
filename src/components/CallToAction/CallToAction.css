@@ -5,6 +5,8 @@ section#hero-section {
 
 div#hero-text {
     grid-column: 3/ span 4;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 div#hero-image {
@@ -22,10 +24,6 @@ img.hero-image {
 }
 
 
-div#hero-text {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
 
 div#hero-text h1{
     color: var(--little-lemon-primary-color-2);
@@ -40,3 +38,27 @@ div#hero-text p{
     padding-bottom: 2rem;
     padding-top: 1rem;
 }
+
+
+@media only screen and (max-width: 1300px) {
+    div#hero-text {
+        grid-column: 2/ span 5;
+    }
+
+    div#hero-image {
+        grid-column: 8 / span 4;
+    }
+  }
+
+
+  @media only screen and (max-width: 960px) {
+
+    div#hero-text {
+        grid-column: 1 / span 12;
+    }
+
+    div#hero-image {
+        grid-column: 1 / span 12;
+    }
+  }
+

@@ -8,12 +8,19 @@ footer {
     grid-column: 3/ span 2;
   }
 
+  section#footer-menu {
+    display: flex;
+    grid-column: span 6;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
   footer nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
     list-style: none;
-    grid-column: span 2;
   }
 
   footer nav ul {
@@ -23,4 +30,30 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 5px;
+  }
+
+
+  @media only screen and (max-width: 1300px) {
+    footer img {
+      grid-column: 2 / span 3;
+  }
+
+  }
+
+  @media only screen and (max-width: 960px) {
+
+    footer.grid {
+    grid-gap: 24px;
+    }
+    footer img {
+      grid-column: 1 / span 3;
+  }
+
+  section#footer-menu {
+    display: flex;
+    grid-column: span 12;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
   }

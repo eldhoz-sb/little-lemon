@@ -1,0 +1,37 @@
+section#About {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom:150px;
+}
+
+div#about-text {
+    grid-column: 3 / span 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+div#about-images {
+    grid-column: 8 / span 3;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 420px;
+}
+
+
+img.about-image-1 {
+    width: 260px;
+    position: relative;
+    object-fit: cover;
+    top: 100px;
+    left: 50px;
+}
+
+img.about-image-2 {
+    width: 260px;
+    object-fit: cover;
+    position: relative;
+}

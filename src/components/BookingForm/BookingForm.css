@@ -1,0 +1,31 @@
+form#booking-form {
+  display: grid;
+  max-width: 500px;
+  gap: 20px;
+  grid-column: 3 / span 8;
+  justify-self: center;
+}
+
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+form#booking-form input {
+  font-size: 1rem;
+  border: 1px solid var(--little-lemon-highlight-color-2);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+form#booking-form select {
+  font-size: 1rem;
+  border: 1px solid var(--little-lemon-highlight-color-2);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+form#booking-form input:focus:invalid {
+  border: 2px solid red;
+}

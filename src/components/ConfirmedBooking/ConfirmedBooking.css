@@ -1,0 +1,5 @@
+div#confirmation-text {
+    grid-column: 3 / span 6;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}

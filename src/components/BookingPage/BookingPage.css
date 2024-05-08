@@ -1,0 +1,8 @@
+#booking-section {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+#booking-section h1 {
+    grid-column: 3 / span 8;
+}

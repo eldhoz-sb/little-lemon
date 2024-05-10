@@ -85,6 +85,14 @@ header nav {
 
 @media (max-width: 960px) {
 
+
+  header div#site-logo {
+    grid-column: 1 / span 2;
+}
+
+header nav {
+  grid-column: span 10;
+}
   ul.flyout-menu.open {
     display: flex;
     flex-direction: column;

@@ -57,7 +57,11 @@ img.about-image-2 {
 
   @media only screen and (max-width: 960px) {
 
-  div#about-text {
+    section#About {
+        gap: 20px;
+    }
+
+    div#about-text {
     grid-column: 1 / span 12;
   }
 

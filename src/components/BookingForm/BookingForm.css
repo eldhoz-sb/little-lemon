@@ -13,19 +13,29 @@ form#booking-form {
 }
 
 form#booking-form input {
+  font-family: 'Karla', sans-serif;
   font-size: 1rem;
-  border: 1px solid var(--little-lemon-highlight-color-2);
+  color: var(--little-lemon-primary-color-1);
+  background-color: var(--little-lemon-highlight-color-1);
+  border: none;
   border-radius: 8px;
-  padding: 10px;
+  padding: 15px;
+  width: auto;
 }
 
 form#booking-form select {
+  font-family: 'Karla', sans-serif;
   font-size: 1rem;
-  border: 1px solid var(--little-lemon-highlight-color-2);
+  font-weight: 700;
+  color: var(--little-lemon-primary-color-1);
+  background-color: var(--little-lemon-highlight-color-1);
+  border: none;
   border-radius: 8px;
-  padding: 10px;
+  padding: 15px;
 }
 
 form#booking-form input:focus:invalid {
   border: 2px solid red;
 }
+
+

@@ -58,7 +58,7 @@ div#hero-text p{
     }
 
     div#hero-image {
-        grid-column: 1 / span 12;
+        grid-column: 2 / span 10;
     }
   }
 

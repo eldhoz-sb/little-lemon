@@ -2,9 +2,10 @@ import { useState } from "react";
 import "./BookingForm.css";
 
 function BookingForm(props) {
+  const today = new Date().toISOString().split('T')[0];
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(today);
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("No Occasion");
@@ -31,7 +32,11 @@ function BookingForm(props) {
 
   return (
     <>
-      <form onSubmit={handleSubmit} id="booking-form" aria-label="Little Lemon Booking Form">
+      <form
+        onSubmit={handleSubmit}
+        id="booking-form"
+        aria-label="Little Lemon Booking Form"
+      >
         <div className="form-box">
           <label htmlFor="res-name">Name</label>
           <input
@@ -79,16 +84,18 @@ function BookingForm(props) {
         </div>
         <div className="form-box">
           <label htmlFor="guests">Number of guests</label>
-          <input
-            type="number"
-            placeholder="1"
-            min="1"
-            max="10"
+          <select
             id="guests"
             value={guests}
             onChange={(e) => setGuests(e.target.value)}
             required
-          />
+          >
+            {[...Array(10)].map((_, index) => (
+              <option key={index + 1} value={index + 1}>
+                {index + 1}
+              </option>
+            ))}
+          </select>
         </div>
         <div className="form-box">
           <label htmlFor="occasion">Occasion</label>
